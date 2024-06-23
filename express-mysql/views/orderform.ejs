@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pane Dolce</title>
+    <link rel="shortcut icon" href="img/pane dolce logo.png">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+      <div class="container">
+        <h2>Form Pemesanan </h2>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="barang">Pilihan Rasa</label>
+            <select id="barang" name="barang" required>
+              <option value="">Pilih Rasa</option>
+              <option value="coklat">Coklat</option>
+              <option value="greentea">Greentea</option>
+              <option value="tiramisu">Tiramisu</option>
+              <option value="Taro">Taro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Pesan Barang">
+          </div>
+        </form>
+      </div>
+  
+      <div class="total-orders">
+        <h3>Total Pesanan</h3>
+        <div class="order-item" data-barang="coklat">
+          <h4>Coklat</h4>
+          <p>Jumlah: <span class="quantity">0</span></p>
+        </div>
+        <div class="order-item" data-barang="greentea">
+          <h4>Greentea</h4>
+          <p>Jumlah: <span class="quantity">0</span></p>
+        </div>
+        <div class="order-item" data-barang="tiramisu">
+          <h4>Tiramisu</h4>
+          <p>Jumlah: <span class="quantity">0</span></p>
+        </div>
+        <div class="order-item" data-barang="taro">
+          <h4>Taro</h4>
+          <p>Jumlah: <span class="quantity">0</span></p>
+        </div>
+        <p class="total-amount">Total Pesanan: <span class="total-quantity">0</span></p>
+      </div>
+      
+  <script src="script.js"></script>  
+</body>
+</html>
